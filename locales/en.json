@@ -1,3 +1,16 @@
 {
-    "score": "Points"
+    "title":"Title",
+    "score": "score",
+    "score-one":"score", 
+    "score-many":"scores",
+    "date":"date",
+    "language":"language",
+    "of":"of",
+    "right":"right",
+    "wrong":"wrong",
+    "question-one":"question",
+    "question-many":"questions",
+    "check":"check",
+    "answer":"answer",
+    "submit":"submit"
 }

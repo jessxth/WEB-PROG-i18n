@@ -1,3 +1,16 @@
 {
-    "score": "Punkte"
+    "title":"Titel",
+    "score": "Punkte",
+    "score-one":"Punkt", 
+    "score-many":"Punkte",
+    "date":"Datum",
+    "language":"Sprache",
+    "of":"von",
+    "right":"richtig",
+    "wrong":"falsch",
+    "question-one":"Frage",
+    "question-many":"Fragen",
+    "check":"prüfen",
+    "answer":"Antwort",
+    "submit":"abgeben"
 }

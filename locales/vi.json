@@ -1,3 +1,16 @@
-{
-    "score": "Điểm"
+{   
+    "title":"Tiêu đề",
+    "score": "Điểm",
+    "score-one":"Điểm", 
+    "score-many":"Điểm",
+    "date":"Ngày",
+    "language":"Tiếng",
+    "of":"Trên",
+    "right":"Đúng",
+    "wrong":"Sai",
+    "question-one":"Câu hỏi",
+    "question-many":"Câu hỏi",
+    "check":"Kiểm tra",
+    "answer":"Câu trả lời",
+    "submit":"Gửi"
 }
