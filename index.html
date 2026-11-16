@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,9 @@
         <div>
             <h1 id="title">Quiz</h1>
         </div>
+
+        <p id="currentDate"></p>
+
         <div class="picker">
             <label id="languageLabel" for="language">Sprache</label>
             <select id="language" aria-label="Sprache wählen">
@@ -26,113 +29,117 @@
     <main>
         <div class="meta">
             <span id="score"></span>
-            <! wird im script konfiguriert>
         </div>
         <div class="questionField">
             <fieldset>
-                <legend id="Q1">1.Frage</legend>
+                <legend id="Q1"></legend>
 
                 <div class="answer">
-                    <input type="radio" name="Q1" value="A1" id="A1">
-                    <label for="A1">Answer 1</label>
+                    <input type="radio" name="Q1" value="A1" id="A.Q1">
+                    <label id="Q1.A" for="A.Q1"> </label>
                 </div>
 
                 <div class="answer">
-                    <input type="radio" name="Q1" value="A2" id="A2">
-                    <label for="A2">Answer 2</label>
+                    <input type="radio" name="Q1" value="A2" id="B.Q1">
+                    <label id="Q1.B" for="B.Q1"></label>
                 </div>
 
                 <div class="answer">
-                    <input type="radio" name="Q1" value="A3" id="A3">
-                    <label for="A3">Answer 3</label>
+                    <input type="radio" name="Q1" value="A3" id="C.Q1">
+                    <label id="Q1.C" for="C.Q1"> </label>
                 </div>
             </fieldset>
         </div>
 
         <div class="questionField">
             <fieldset>
-                <legend id="Q2">2.Frage</legend>
+                <legend id="Q2"></legend>
 
                 <div class="answer">
-                    <input type="radio" name="Q2" value="A1" id="A1">
-                    <label for="A1">Answer 1</label>
+                    <input type="radio" name="Q2" value="A1" id="A.Q2">
+                    <label id="Q2.A" for="A.Q2"> </label>
                 </div>
 
                 <div class="answer">
-                    <input type="radio" name="Q2" value="A2" id="A2">
-                    <label for="A2">Answer 2</label>
+                    <input type="radio" name="Q2" value="A2" id="B.Q2">
+                    <label id="Q2.B" for="B.Q2"></label>
                 </div>
 
                 <div class="answer">
-                    <input type="radio" name="Q2" value="A3" id="A3">
-                    <label for="A3">Answer 3</label>
-                </div>
-            </fieldset>
-        </div>
-
-        <div class="questionField">
-            <fieldset>
-                <legend id="Q3">3.Frage</legend>
-
-                <div class="answer">
-                    <input type="radio" name="Q3" value="A1" id="A1">
-                    <label for="A1">Answer 1</label>
-                </div>
-
-                <div class="answer">
-                    <input type="radio" name="Q3" value="A2" id="A2">
-                    <label for="A2">Answer 2</label>
-                </div>
-
-                <div class="answer">
-                    <input type="radio" name="Q3" value="A3" id="A3">
-                    <label for="A3">Answer 3</label>
+                    <input type="radio" name="Q2" value="A3" id="C.Q2">
+                    <label id="Q2.C" for="C.Q2"> </label>
                 </div>
             </fieldset>
         </div>
 
         <div class="questionField">
             <fieldset>
-                <legend id="Q4">4.Frage</legend>
+                <legend id="Q3"></legend>
 
                 <div class="answer">
-                    <input type="radio" name="Q4" value="A1" id="A1">
-                    <label for="A1">Answer 1</label>
+                    <input type="radio" name="Q3" value="A1" id="A.Q3">
+                    <label id="Q3.A" for="A.Q3"> </label>
                 </div>
 
                 <div class="answer">
-                    <input type="radio" name="Q4" value="A2" id="A2">
-                    <label for="A2">Answer 2</label>
+                    <input type="radio" name="Q3" value="A2" id="B.Q3">
+                    <label id="Q3.B" for="B.Q3"></label>
                 </div>
 
                 <div class="answer">
-                    <input type="radio" name="Q4" value="A3" id="A3">
-                    <label for="A3">Answer 3</label>
+                    <input type="radio" name="Q3" value="C.Q3">
+                    <label id="Q3.C" for="C.Q3"> </label>
                 </div>
             </fieldset>
         </div>
 
         <div class="questionField">
             <fieldset>
-                <legend id="Q5">5.Frage</legend>
+                <legend id="Q4"></legend>
 
                 <div class="answer">
-                    <input type="radio" name="Q5" value="A1" id="A1">
-                    <label for="A1">Answer 1</label>
+                    <input type="radio" name="Q4" value="A1" id="A.Q4">
+                    <label id="Q4.A" for="A.Q4"> </label>
                 </div>
 
                 <div class="answer">
-                    <input type="radio" name="Q5" value="A2" id="A2">
-                    <label for="A2">Answer 2</label>
+                    <input type="radio" name="Q4" value="A2" id="B.Q4">
+                    <label id="Q4.B" for="B.Q4"> </label>
                 </div>
 
                 <div class="answer">
-                    <input type="radio" name="Q5" value="A3" id="A3">
-                    <label for="A3">Answer 3</label>
+                    <input type="radio" name="Q4" value="A3" id="C.Q4">
+                    <label id="Q4.C" for="C.Q4"> </label>
                 </div>
             </fieldset>
+        </div>
+
+        <div class="questionField">
+            <fieldset>
+                <legend id="Q5"></legend>
+
+                <div class="answer">
+                    <input type="radio" name="Q5" value="A1" id="A.Q5">
+                    <label id="Q5.A" for="A.Q5"> </label>
+                </div>
+
+                <div class="answer">
+                    <input type="radio" name="Q5" value="A2" id="B.Q5">
+                    <label id="Q5.B" for="B.Q5"> </label>
+                </div>
+
+                <div class="answer">
+                    <input type="radio" name="Q5" value="A3" id="C.Q5">
+                    <label id="Q5.C" for="C.Q5"> </label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <button id="btn-submit"></button>
         </div>
     </main>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
