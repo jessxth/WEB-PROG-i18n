@@ -4,6 +4,16 @@ import deTranslation from "./locales/de.json";
 import ruTranslation from "./locales/ru.json";
 import viTranslation from "./locales/vi.json";
 
+const correctAnswers = {
+  Q1: "A2",
+  Q2: "A1",
+  Q3: "A2",
+  Q4: "A1",
+  Q5: "A3",
+};
+
+let isSubmitted = false;
+
 i18next
   .init({
     lng: "de",
@@ -56,6 +66,32 @@ function updateContent() {
   document.getElementById("Q5.C").textContent = i18next.t("Q5.C");
 
   document.getElementById("btn-submit").textContent = i18next.t("submit");
+
+  if (isSubmitted) {
+    const qAmount = Object.keys(correctAnswers).length;
+    let score = 0;
+    for (let i = 1; i <= 5; i++) {
+      const questionName = `Q${i}`;
+
+      const selectedInput = document.querySelector(
+        `input[name="${questionName}"]:checked`,
+      );
+
+      if (selectedInput) {
+        if (selectedInput.value === correctAnswers[questionName]) {
+          score++;
+        }
+      }
+    }
+    
+    document.getElementById("result-text").textContent =
+      i18next.t("result-text");
+
+    document.getElementById("score").textContent = i18next.t("result", {
+      score: score,
+      qAmount: qAmount,
+    });
+  }
 }
 
 document.getElementById("language").addEventListener("change", (event) => {
@@ -83,12 +119,9 @@ function updateDate() {
   document.getElementById("currentDate").textContent = date;
 }
 
-const correctAnswers = {
-  Q1: "A2",
-  Q2: "A1",
-  Q3: "A2",
-  Q4: "A1",
-  Q5: "A3",
-};
+document.getElementById("btn-submit").addEventListener("click", () => {
+  isSubmitted = true;
+  updateContent();
+});
 
 console.log("Hello");

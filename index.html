@@ -27,9 +27,6 @@
 
     </header>
     <main>
-        <div class="meta">
-            <span id="score"></span>
-        </div>
         <div class="questionField">
             <fieldset>
                 <legend id="Q1"></legend>
@@ -87,7 +84,7 @@
                 </div>
 
                 <div class="answer">
-                    <input type="radio" name="Q3" value="C.Q3">
+                    <input type="radio" name="Q3" value="A3" id="C.Q3">
                     <label id="Q3.C" for="C.Q3"> </label>
                 </div>
             </fieldset>
@@ -137,6 +134,11 @@
 
         <div>
             <button id="btn-submit"></button>
+        </div>
+
+        <div>
+            <p id="result-text"></p>
+            <span id="score"></span>
         </div>
     </main>
     <script type="module" src="script.js"></script>
