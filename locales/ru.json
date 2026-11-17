@@ -1,5 +1,5 @@
 {
-  "title": " ",
+  "title": "Заголовок",
   "score_one": "Балл",
   "score_few": "Балла",
   "score_many": "Баллов",
@@ -7,7 +7,7 @@
   "language": "Язык",
   "right": "Правильно",
   "wrong": "Неправильно",
-  "question-one": "Вопрос",
+  "question_one": "Вопрос",
   "question_many": "Вопросов",
   "check": "Проверить",
   "answer": "Ответить",
