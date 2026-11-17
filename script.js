@@ -37,6 +37,7 @@ i18next
   .then(updateDate);
 
 function updateContent() {
+  document.documentElement.lang = i18next.language;
   document.getElementById("languageLabel").textContent = i18next.t("language");
 
   document.getElementById("Q1").textContent = i18next.t("Q1");
@@ -84,6 +85,7 @@ function updateContent() {
       }
     }
     
+
     document.getElementById("result-text").textContent =
       i18next.t("result-text");
 
@@ -91,6 +93,7 @@ function updateContent() {
       score: score,
       qAmount: qAmount,
     });
+    document.getElementById("result").hidden = false;
   }
 }
 
