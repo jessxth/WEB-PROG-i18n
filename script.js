@@ -3,6 +3,7 @@ import enTranslation from "./locales/en.json";
 import deTranslation from "./locales/de.json";
 import ruTranslation from "./locales/ru.json";
 import viTranslation from "./locales/vi.json";
+import arTranslation from "./locales/ar.json";
 
 const correctAnswers = {
   Q1: "A2",
@@ -19,14 +20,17 @@ i18next
     lng: "de",
     fallbackLng: "de",
     resources: {
+      ar: {
+        translation: arTranslation,
+      },
+      de: {
+        translation: deTranslation,
+      },
       en: {
         translation: enTranslation,
       },
       ru: {
         translation: ruTranslation,
-      },
-      de: {
-        translation: deTranslation,
       },
       vi: {
         translation: viTranslation,
@@ -38,7 +42,9 @@ i18next
 
 function updateContent() {
   document.documentElement.lang = i18next.language;
+  document.body.dir = i18next.dir();
   document.getElementById("languageLabel").textContent = i18next.t("language");
+  document.getElementById("languageOption").value = i18next.language;
 
   document.getElementById("Q1").textContent = i18next.t("Q1");
   document.getElementById("Q2").textContent = i18next.t("Q2");
@@ -84,7 +90,6 @@ function updateContent() {
         }
       }
     }
-    
 
     document.getElementById("result-text").textContent =
       i18next.t("result-text");
@@ -97,7 +102,7 @@ function updateContent() {
   }
 }
 
-document.getElementById("language").addEventListener("change", (event) => {
+document.getElementById("languageOption").addEventListener("change", (event) => {
   const selectedlanguage = event.target.value;
 
   i18next.changeLanguage(selectedlanguage).then(updateContent).then(updateDate);
@@ -105,6 +110,7 @@ document.getElementById("language").addEventListener("change", (event) => {
 
 function updateDate() {
   const locales = {
+    ar: "ar-SA",
     de: "de-DE",
     en: "en-US",
     ru: "ru-RU",
