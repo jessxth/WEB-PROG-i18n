@@ -14,17 +14,17 @@
   "result-text": "Kết quả của bạn",
   "result": "{{score}} trên {{qAmount}} điểm",
 
-  "Q1": "Một trang web có cả tệp JSON tiếng Đức và tiếng Anh. Điều gì xảy ra nếu một khóa dịch bị thiếu trong en.json và i18next được cấu hình với fallbackLng: 'de'?",
+  "Q1": "Một trang web có cả tệp JSON tiếng Đức và tiếng Anh.\nĐiều gì xảy ra nếu một khóa dịch bị thiếu trong en.json và i18next được cấu hình với fallbackLng: 'de'?",
   "Q1.A": "Phần dịch bị thiếu sẽ tự động được dịch sang tiếng Anh.",
   "Q1.B": "Văn bản tiếng Đức sẽ được sử dụng, miễn là khóa đó tồn tại trong tệp tiếng Đức.",
   "Q1.C": "Khóa dịch sẽ luôn được hiển thị.",
 
-  "Q2": "Một đáp án có tên là 'München' trong tiếng Đức và 'Munich' trong tiếng Anh. Ứng dụng quiz nên kiểm tra đáp án được chọn như thế nào?",
+  "Q2": "Một đáp án có tên là 'München' trong tiếng Đức và 'Munich' trong tiếng Anh.\nỨng dụng quiz nên kiểm tra đáp án được chọn như thế nào?",
   "Q2.A": "Sử dụng ID đáp án không phụ thuộc vào ngôn ngữ, chẳng hạn như 'A2'.",
   "Q2.B": "So sánh với văn bản được hiển thị bằng ngôn ngữ hiện tại.",
   "Q2.C": "Tự động dịch đáp án trước mỗi lần so sánh.",
 
-  "Q3": "Một bản dịch trong i18next chứa câu 'You have {{count}} message'. Bạn gọi t('message', {count: 3}). Nếu không có thêm quy tắc xử lý số ít và số nhiều, vấn đề chính là gì?",
+  "Q3": "Một bản dịch trong i18next chứa câu 'You have {{count}} message'. Bạn gọi t('message', {count: 3}).\nNếu không có thêm quy tắc xử lý số ít và số nhiều, vấn đề chính là gì?",
   "Q3.A": "Biến count không thể được chèn vào dưới dạng số.",
   "Q3.B": "Kết quả hiển thị có thể vẫn sai ngữ pháp vì việc chèn biến (interpolation) không tự tạo ra dạng số nhiều.",
   "Q3.C": "i18next chỉ có thể sử dụng biến count với tiếng Anh.",

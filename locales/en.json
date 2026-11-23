@@ -14,17 +14,17 @@
   "result-text": "Your score",
   "result": "{{score}} out of {{qAmount}}",
 
-  "Q1": "A website has both a German and an English JSON file. What happens if a translation key is missing in en.json and i18next is configured with fallbackLng: 'de'?",
+  "Q1": "A website has both a German and an English JSON file.\nWhat happens if a translation key is missing in en.json and i18next is configured with fallbackLng: 'de'?",
   "Q1.A": "The missing translation is automatically translated into English.",
   "Q1.B": "The German text is used, provided the key exists in the German file.",
   "Q1.C": "The translation key is always displayed.",
 
-  "Q2": "An answer is called 'München' in German and 'Munich' in English. How should the quiz application check the selected answer?",
+  "Q2": "An answer is called 'München' in German and 'Munich' in English.\nHow should the quiz application check the selected answer?",
   "Q2.A": "By using a language-independent answer ID, such as 'A2'.",
   "Q2.B": "By comparing it with the displayed text in the current language.",
   "Q2.C": "By automatically translating the answer before each comparison.",
 
-  "Q3": "An i18next translation contains 'You have {{count}} message'. You call t('message', {count: 3}). What is the main problem without additional pluralization rules?",
+  "Q3": "An i18next translation contains 'You have {{count}} message'. You call t('message', {count: 3}).\nWhat is the main problem without additional pluralization rules?",
   "Q3.A": "The count variable cannot be inserted as a number.",
   "Q3.B": "The output may remain grammatically incorrect because interpolation alone does not generate plural forms.",
   "Q3.C": "i18next can only use count with the English language.",

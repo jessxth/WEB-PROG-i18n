@@ -15,17 +15,17 @@
   "result-text": "Dein Ergebnis",
   "result": "{{score}} von {{qAmount}} Punkten",
 
-  "Q1": "Eine Website besitzt eine deutsche und eine englische JSON-Datei. Was passiert, wenn ein Übersetzungsschlüssel in en.json fehlt und i18next mit fallbackLng: 'de' konfiguriert wurde?",
+  "Q1": "Eine Website besitzt eine deutsche und eine englische JSON-Datei.\nWas passiert, wenn ein Übersetzungsschlüssel in en.json fehlt und i18next mit fallbackLng: 'de' konfiguriert wurde?",
   "Q1.A": "Die fehlende Übersetzung wird automatisch ins Englische übersetzt.",
   "Q1.B": "Der deutsche Text wird verwendet, sofern der Schlüssel dort vorhanden ist.",
   "Q1.C": "Es wird immer der Übersetzungsschlüssel angezeigt.",
 
-  "Q2": "Eine Antwort heißt auf Deutsch 'München' und auf Englisch 'Munich'. Wie sollte die Quiz-App die ausgewählte Antwort überprüfen?",
+  "Q2": "Eine Antwort heißt auf Deutsch 'München' und auf Englisch 'Munich'.\nWie sollte die Quiz-App die ausgewählte Antwort überprüfen?",
   "Q2.A": "Mit einer sprachunabhängigen Antwort-ID, beispielsweise 'A2'.",
   "Q2.B": "Durch Vergleich mit dem sichtbaren Text in der aktuellen Sprache.",
   "Q2.C": "Durch automatisches Übersetzen der Antwort vor jedem Vergleich.",
 
-  "Q3": "Eine i18next-Übersetzung lautet 'You have {{count}} message'. Ihr ruft t('message', {count: 3}) auf. Was ist ohne zusätzliche Pluraldefinition das grundlegende Problem?",
+  "Q3": "Eine i18next-Übersetzung lautet 'You have {{count}} message'. Ihr ruft t('message', {count: 3}) auf.\nWas ist ohne zusätzliche Pluraldefinition das grundlegende Problem?",
   "Q3.A": "Die Variable count kann nicht als Zahl eingesetzt werden.",
   "Q3.B": "Die Ausgabe kann grammatisch falsch bleiben, weil Interpolation allein keine Pluralform erzeugt.",
   "Q3.C": "i18next kann count nur bei englischer Sprache verwenden.",
