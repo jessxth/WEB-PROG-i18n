@@ -45,6 +45,7 @@ function updateContent() {
   document.body.dir = i18next.dir();
   document.getElementById("languageLabel").textContent = i18next.t("language");
   document.getElementById("languageOption").value = i18next.language;
+  document.getElementById("title").textContent = i18next.t("title");
 
   document.getElementById("Q1").textContent = i18next.t("Q1");
   document.getElementById("Q2").textContent = i18next.t("Q2");
