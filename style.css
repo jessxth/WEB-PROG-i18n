@@ -9,13 +9,28 @@ body{
     color: #24143c;
 }
 
-.top{
-    background-color: #7c3aed;
-    padding: 20px;
-    border-radius: 10px;
+.top {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: #7c3aed;
+    padding: 20px;
+    min-height: 130px;
+    border-radius: 10px;
+}
+
+#title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 0;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
 }
 
 .header-right{
